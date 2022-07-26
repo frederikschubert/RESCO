@@ -25,7 +25,7 @@ def main():
     ap.add_argument("--pwd", type=str, default=str(pathlib.Path().absolute())+os.sep)
     ap.add_argument("--log_dir", type=str, default=str(pathlib.Path().absolute())+os.sep+'logs'+os.sep)
     ap.add_argument("--gui", type=bool, default=False)
-    ap.add_argument("--libsumo", type=bool, default=False)
+    ap.add_argument("--libsumo", type=bool, default=True)
     ap.add_argument("--tr", type=int, default=0)  # Can't multi-thread with libsumo, provide a trial number
     args = ap.parse_args()
 
